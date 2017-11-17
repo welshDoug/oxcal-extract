@@ -1,0 +1,24 @@
+{
+  "name": "oxcal-extract",
+  "version": "0.0.1",
+  "description": "Utility for extracting dates from oxcal output",
+  "main": "index.js",
+  "scripts": {
+    "extract": "node extract.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/welshDoug/oxcal-extract.git"
+  },
+  "keywords": [
+    "oxcal",
+    "js",
+    "archaeology"
+  ],
+  "author": "Doug Cowie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/welshDoug/oxcal-extract/issues"
+  },
+  "homepage": "https://github.com/welshDoug/oxcal-extract#readme"
+}
