@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/welshDoug/oxcal-extract/issues"
   },
-  "homepage": "https://github.com/welshDoug/oxcal-extract#readme"
+  "homepage": "https://github.com/welshDoug/oxcal-extract#readme",
+  "dependencies": {
+    "csv": "^2.0.0"
+  }
 }
