@@ -4,7 +4,8 @@
   "description": "Utility for extracting dates from oxcal output",
   "main": "index.js",
   "scripts": {
-    "extract": "node extract.js"
+    "extract": "node extract.js",
+    "generate" : "node gen-weights.js > output.txt"
   },
   "repository": {
     "type": "git",
