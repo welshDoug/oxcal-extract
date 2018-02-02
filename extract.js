@@ -12,12 +12,21 @@ console.log("OCD[14].median: " + ocd[14].posterior.median);*/
 
 var means = {}
 for (let i in ocd) {
- if (ocd[i].posterior && ocd[i].posterior.mean) {
+ if (ocd[i].posterior && ocd[i].posterior.mean && ocd[i].posterior.mean < -1000) {
  means[ocd[i].name] = ocd[i].posterior.mean;
  }
 } 
 
+var medians = {}
+for (let i in ocd) {
+ if (ocd[i].posterior && ocd[i].posterior.median && ocd[i].posterior.median < -1000) {
+ medians[ocd[i].name] = ocd[i].posterior.median;
+ }
+} 
+
 console.log(means);
+console.log(medians);
+
 
 //TODO convert to CSV
 
