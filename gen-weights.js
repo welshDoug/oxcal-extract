@@ -29,7 +29,7 @@ function generateWeights(sequenceArray) {
                 if (k == j) {
                     continue;
                 }
-                console.log(phase[j] + "\t" + phase[k] + "\t1"); 
+                process.stdout.write(phase[j] + "\t" + phase[k] + "\t1\r\n"); 
             }
             
             //Now output weight with others in sequence
@@ -39,7 +39,7 @@ function generateWeights(sequenceArray) {
                 }
                 let phase2 = sequenceArray[l];
                 for (let m = 0; m < phase2.length; m++) {
-                    console.log(phase[j] + "\t" + phase2[m] + "\t" + 1/(Math.abs(i-l)+1)); 
+                    process.stdout.write(phase[j] + "\t" + phase2[m] + "\t" + 1/(Math.abs(i-l)+1) + "\r\n"); 
                 }
             }
         }
